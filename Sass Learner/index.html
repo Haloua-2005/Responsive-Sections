@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Learner</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- <nav class="nav">
+            <ul class="nav__container">
+                <li class="nav__list l1"><a href="#sec__one" class="link" active>One</a></li>
+                <li class="nav__list l2 l1"><a href="#sec__two" class="link">Two</a></li>
+                <li class="nav__list l2"><a href="#sec__three" class="link">Three</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="nav-check">
+            <div class="nav-check__container">
+            <a href="#sec__one" class="__link"></a>
+            <a href="#sec__two" class="__link"></a>
+            <a href="#sec__three" class="__link"></a>
+            </div>
+        </nav>
+
+    <section id="sec__one">
+        <h1 class="Title">First</h1>
+        <button class="linker"><a href="#sec__three" class="link">Go to Section 3</a></button>
+    </section>
+
+    <section id="sec__two">
+        <h1 class="Title">Second</h1>
+    </section>
+
+    <section id="sec__three">
+        <h1 class="Title">Third</h1>
+        <button class="linker"><a href="#sec__one" class="link">Go to Section 1</a></button>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
