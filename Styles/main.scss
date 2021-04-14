@@ -1,0 +1,51 @@
+/*Imports*/
+@import "./config";
+@import "./nav";
+/*Main Style*/
+
+//Sections
+@mixin section($h) {
+  height: $h;
+  width: 100vw;
+  @include defaultFlex(column);
+}
+
+#sec__one {
+  @include section(100vh);
+  background-color: $orange;
+  .linker {
+    background-color: $blue;
+  }
+}
+
+#sec__two {
+  background-color: $gray;
+  @include section(50vh);
+}
+
+#sec__three {
+  @include section(100vh);
+  background-color: $blue;
+  .linker {
+    background-color: $orange;
+  }
+}
+
+.Title {
+  font-size: 5em;
+}
+
+.linker {
+  padding: 1em 2em;
+  border-radius: 50px;
+  border: transparent;
+  &:focus {
+    outline: none;
+  }
+  .link {
+    text-decoration: none;
+    font-size: 3;
+    font-weight: 600;
+    color: black;
+  }
+}

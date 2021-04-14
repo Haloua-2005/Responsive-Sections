@@ -1,0 +1,52 @@
+/*Variables*/
+$orange: #ff7f50;
+$blue: #5f9ea0;
+$gray: #5c5454;
+$O-gray: rgb(51, 51, 51);
+
+/*Mixins*/
+@mixin defaultFlex($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: lighten($bgColor, 100%);
+    color: darken($primaryColor, 100%);
+  }
+}
+
+@mixin transitionEase {
+  transition: all ease-in-out 0.5s;
+}
+
+/*Window Configuration*/
+
+//ScrollBar configuration
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+::-webkit-scrollbar-track {
+  border-left: 0.5px solid whitesmoke;
+  box-shadow: inset 0 0 2.5px rgba(255, 255, 255, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
